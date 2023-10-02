@@ -1,0 +1,48 @@
+header{
+    --startY: -100%;
+    animation: loadHorizontal 1s;
+}
+
+main{
+    --startX: -50%;
+    animation: laodVertical 1s backwards;
+    animation-delay: .5s;
+}
+
+aside{
+    --startY: -30%;
+    animation: loadHorizontal 1s backwards;
+    animation-delay: 1s;
+}
+
+.artigos figure{
+    --startY: -50%;
+    animation: articles 2s backwards;
+    animation-delay: 2s;
+}
+
+footer{
+    --startY: 100%;
+    animation: loadHorizontal 1s;
+}
+
+@keyframes loadHorizontal{
+    from{
+        opacity: 0;
+        transform: translateY(var(--startY));
+    }
+}
+
+@keyframes laodVertical{
+    from{
+        opacity: 0;
+        transform: translatex(var(--startX));
+    }
+}
+
+@keyframes articles {
+    from{
+        opacity: 0;
+        transform: translatey(var(--startY));
+    }
+}

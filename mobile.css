@@ -77,11 +77,13 @@ form {
   color: #fff;
 }
 
-.input-wrapper input:focus{
+.input-wrapper input:focus {
   border: none;
 }
 
 .input-wrapper label {
+  width: 1px;
+  height: 1px;
   position: absolute;
   z-index: -1;
   overflow: hidden;
@@ -135,7 +137,7 @@ main img {
   transition: scale 1s ease-in-out;
 }
 
-.votacao img:hover{
+.votacao img:hover {
   transform: scale(1.1);
 }
 
@@ -176,13 +178,16 @@ aside h2 {
   width: 100%;
 }
 
+.artigos figure:hover {
+  transform: scale(1.02);
+}
+
 figure img {
   width: 15rem;
 }
 
 figcaption {
   max-width: 30rem;
-  cursor: pointer;
 }
 
 figcaption h3 {
@@ -198,6 +203,14 @@ figcaption p {
   font-size: 1.4rem;
   font-weight: var(--font-bsase-400);
   line-height: 2.24rem;
+}
+
+figure {
+  cursor: pointer;
+}
+
+figure:active {
+  background-color: rgba(211, 211, 211, 0.2);
 }
 
 footer {
