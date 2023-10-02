@@ -1,0 +1,50 @@
+@media (min-width: 1230px){
+    .app{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "footer footer footer"
+        ;
+        column-gap: 3.4rem;
+        place-content: center;
+
+        width: 100%;
+    }
+
+    header{
+        grid-area: header;
+        min-width: 100%;
+    }
+    
+    main{
+        grid-area: main;
+        padding: 4.4rem 0 0 10.9rem;
+        align-self: start;
+    }
+
+    main .enquete{
+        display: flex;
+        gap: 36rem;
+    }
+
+    section, p{
+        padding: 0;
+    }
+
+    aside{
+        grid-area: aside;
+
+        padding: 4.4rem 11.2rem 0 0;
+        margin: 0;
+    }
+
+    aside h2{
+        margin-top: 0;
+    }
+
+    footer{
+        grid-area: footer;
+        margin-top: 3.4rem;
+    }
+}
